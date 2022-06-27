@@ -74,37 +74,25 @@
 .heroarea  .lista_servicos li{
     width: 227px;
 }
-
 .heroarea  .lista_servicos li::after{
-   content: "";
+    content: "";
+    width: 56px;
+    height: 2px ;
     display: block;
     margin: 10px 0;
-    width: 56px;
-    height: 2px;
     background: #FDBF0D;
 }
 
-.heroarea .card{
-    display: flex;
-    flex-direction: column;
-    height: 353px;
-    min-width: 405px;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.11);
-    border-radius: 5px;
-    margin: 0 auto;
-}
+
 .heroarea .card .detalhes{
     display: flex;
     flex-direction: column;
-    height: 353px;
     min-width: 405px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.11);
-    border-radius: 5px;
-    margin: 0 auto;
+    padding-top: 30px;
 }
-.heroarea .card svg{
+.heroarea .slide_itens svg{
     max-width: 20px;
     max-height: 20px;
     fill: #003A69;
@@ -118,6 +106,7 @@
     gap: 8px;
 }
 .heroarea .card .tag{
+    align-self: center;
     width: 327px;
     height: 55px;
     background: rgba(255, 255, 255, 0.9);
@@ -127,18 +116,25 @@
 .heroarea .card .tag_descricao{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 30px;
 }
-.heroarea .card .carrosel{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.heroarea .card .tag_categoria{
     height: 58px;
-    flex-direction: row;
     background: #FDBF0D;
 }
-.heroarea .card .carrosel a{
-    padding: 25px 20px 20px;
+.heroarea .card .button {
+    position: absolute;
+    top: 484px;
+    width: 405px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.heroarea .card .button button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
 }
 .heroarea .card .background{
     position: absolute;
@@ -146,12 +142,6 @@
 }
 
 /* slide card */
-.slide_itens{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .slide_itens > *, .tag_servico{
     position: absolute;
     top: 0px;
@@ -184,7 +174,6 @@
     flex-direction: column;
     flex: 1;
     gap: 16px;
-
 }
 .servicos .card_text{
     justify-content: center;
@@ -205,7 +194,7 @@
 .servicos .card_servico svg{
     width: 40px;
     height: 40px;
-    fill: #FDBF0D;
+    fill: #003A69;
 }
 .servicos .card_servico p{
     display: flex;
@@ -312,6 +301,12 @@
     gap: 16px;
 }
 
+.contato .informacoes svg{
+    height: 24px;
+    width: 24px;
+    fill: #fff;
+}
+
 
 /* Contato_input */
 .contato .container .dados_input{
@@ -333,9 +328,12 @@
     height: 56px;
     padding: 0  0 0 45px;
 }
-.contato .dados_input img {
+.contato .dados_input svg {
     position: absolute;
     padding: 15px;
+    fill: #003A69;
+    max-height: 50px;
+    max-width: 50px;
 }
 .contato .dados_input textarea{
     padding: 20px ;
@@ -393,6 +391,7 @@
     min-height: 57px;
 }
 
+/* FOOTER */
 .footer{
     background: url("../img/Footer_background.jpg") no-repeat;
     background-size: cover;
@@ -432,4 +431,10 @@
 .footer .dados{
     display: flex;  
     gap: 80px;  
+}
+
+.footer .logotipo{
+    fill: #fff;
+    width: 177px;
+    height: 45px;
 }
