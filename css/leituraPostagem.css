@@ -1,0 +1,39 @@
+/* Hero Area */
+body{
+    background:#F7F7F7; 
+}
+.heroarea{
+    background: url("../img/blog/postagem_do_blog.png") no-repeat;
+    background-size: cover;
+}
+.heroarea .container{
+    max-width: 1200px;
+    margin: 80px auto 0;
+    height: 160px;
+    padding: 60px 15px;
+    text-align: center;
+}
+.heroarea .container h2{
+    color: #fff;
+}
+
+/* Postagem */
+.conteudo_postagem .postagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    max-width: 895px;
+}
+.conteudo_postagem .cabecalho .caption{
+    margin: 8px 0 16px;
+}
+.conteudo_postagem .cabecalho img{
+    margin-bottom: 16px;
+}
+.conteudo_postagem .postagem .texto p{
+    margin-bottom: 16px
+}
+section.white{
+    background: #fff;
+}

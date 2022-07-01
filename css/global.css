@@ -90,3 +90,221 @@ section.white{
     margin: 0 auto;
     padding: 60px 15px;
 }
+
+/* Header */
+
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.06);
+}
+.header .container{
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    height: 50px;
+}
+.header_menu ul{
+    display: flex;
+}
+.header_menu a{
+    padding: 10px;
+}
+
+
+/* Contato */
+
+.contato{
+    width: 100%;
+    padding: 60px;
+    background: #2B3B4B;
+    color: #fff;
+}
+.contato .container{
+    max-width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.contato .dados_contatos{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+.contato .container .informacoes h4{
+    margin-bottom: 16px;
+}
+.contato .container .informacoes .social{
+    margin-right: 16px;
+}
+.contato .dados_contatos h2{
+    color: #fff;
+    max-width: 430px;
+}
+.contato .dados_contatos h3{
+    margin: 16px 0 120px;
+}
+.contato .dados_contatos h4{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+.contato .informacoes svg{
+    height: 24px;
+    width: 24px;
+    fill: #fff;
+}
+.contato form button{
+    border: none;
+} 
+
+.contato .container .dados_input{
+    display: flex;
+    flex-direction: column;
+    gap:16px
+}
+.contato .dados_input input, .contato .dados_input textarea{
+    background: #F2F5F7;
+    border-bottom: 2px solid #FDBF0D;
+    border-radius: 4px 4px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #003A69;
+}
+.contato .dados_input input{
+    width: 386px;
+    height: 56px;
+    padding: 0  0 0 45px;
+}
+.contato .dados_input svg {
+    position: absolute;
+    padding: 15px;
+    fill: #003A69;
+    max-height: 50px;
+    max-width: 50px;
+}
+.contato .dados_input textarea{
+    padding: 20px ;
+}
+.contato .dados_input input::placeholder, .contato .dados_input textarea::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #003A69;
+}
+.contato .dados_input input:focus, .contato .dados_input textarea:focus{
+    background: #FDEBBA;
+}
+
+/* Blog */
+
+.blog_chamada h2{
+    margin-bottom: 16px;
+}
+.blog_chamada h3{
+    margin-bottom: 32px;
+}
+.blog_chamada .artigos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 32px;
+}
+.blog_chamada .artigos .card{
+    max-width: 380px;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    flex: 1;
+    gap: 8px;
+}
+.blog_chamada .artigos .card img{
+    border: 1px solid #C8C8C8;
+    width: 100%;
+}
+
+.blog_chamada .artigos .card p, .blog_chamada .artigos .card h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.blog_chamada .artigos .card p{
+    -webkit-line-clamp: 3;
+    min-height: 75px;
+}
+.blog_chamada .artigos .card h4{
+    -webkit-line-clamp: 2;
+    min-height: 57px;
+}
+
+/* FOOTER */
+.footer{
+    background: url("../img/Footer_background.jpg") no-repeat;
+    background-size: cover;
+}
+.footer .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+    
+    display: flex;
+    justify-content: flex-start ;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 60px 15px;
+    color: #fff;
+}
+.footer .container .footer_contato{
+    width: 380px;
+    height: 100%;
+}
+.footer .container .footer_contato .informacoes h4{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    margin: 16px 0;
+}
+.footer .container .footer_contato .social{
+    margin-right: 16px;
+}
+.footer .container .footer_links ul{
+    padding: 16px 0;
+}
+.footer .container .footer_links ul a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+}
+.footer .dados{
+    display: flex;  
+    gap: 80px;  
+}
+.footer .logotipo{
+    fill: #fff;
+    width: 177px;
+    height: 45px;
+}
+.footer .footer_links{
+   display: flex;
+   gap: 30px;
+}
+.footer .copyright{
+    width: 1220px;
+}
