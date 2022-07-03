@@ -24,7 +24,6 @@ h2{
     font-weight: 600;
     font-size: 18px;
     line-height: 35px;
-    color: #003A69;
 }
 h2.ornamento_left::before{
     content:"";
@@ -243,13 +242,13 @@ section.white{
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
-.blog_chamada .artigos .card p{
-    -webkit-line-clamp: 3;
-    min-height: 75px;
-}
 .blog_chamada .artigos .card h4{
     -webkit-line-clamp: 2;
     min-height: 57px;
+}
+.blog_chamada .artigos .card p{
+    -webkit-line-clamp: 3;
+    min-height: 75px;
 }
 
 /* FOOTER */

@@ -1,0 +1,90 @@
+.heroarea{
+    background: url("../img/blog/blog_postagens.png") no-repeat;
+    background-size: cover;
+}
+.heroarea .container{
+    max-width: 1200px;
+    margin: 80px auto 0;
+    height: 329px;
+    padding: 60px 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Postagens */
+
+.blog_postagens .artigos{
+    max-width: 895px;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 32px;
+}
+.blog_postagens .artigos .card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:flex-start;
+    flex: 1;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.blog_postagens  .artigos .card::after{
+    content: '';
+    margin-top: 16px;
+    width: 100%;
+    height: 1px;
+    margin-right: 16px;
+    background: #EDEDED;
+}
+.blog_postagens .artigos .card .informacoes{
+    max-width: 480px;
+}
+.blog_postagens .artigos .card .descricao{
+    min-height: 150px;
+}
+.blog_postagens .artigos .card .blog_postagens  .artigos .descricao   p{
+    -webkit-line-clamp: 3;
+    min-height: 75px;
+} 
+.blog_postagens .artigos .card .buttons{
+    max-width: 480px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 8px;
+}
+.blog_postagens .artigos .card p, .blog_postagens .artigos .card h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.blog_postagens .artigos .descricao h4{
+    -webkit-line-clamp: 2;
+    min-height: 57px;
+}
+.blog_postagens .artigos .descricao   p{
+    -webkit-line-clamp: 3;
+    min-height: 75px;
+}
+.blog_postagens  .artigos .paginacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.blog_postagens .artigos .paginacao .button svg{
+    height: 24px;
+    width: 24px;
+    margin-top: 6px;
+    fill: #003A69;
+}
+.blog_postagens .artigos .paginacao .page:not(.active){
+    border: #EDEDED;
+}
