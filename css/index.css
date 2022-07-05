@@ -133,6 +133,7 @@
 .servicos h2 {
     text-align: center;
     margin-bottom: 32px;
+    color: #003A69;
 }
 .servicos .card_servico, .servicos .card_text{
     max-width: 380px;
@@ -200,7 +201,9 @@
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
-
+.sobre_nos .textos h2{
+    color: #003A69;
+}
 .sobre_nos .textos{
     max-width: 481px;
     display: flex;
