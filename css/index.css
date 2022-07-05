@@ -154,6 +154,10 @@
     border-radius: 10px;
     align-items: flex-start;
 }
+.servicos .card_servico:hover{
+    background: #003A69;
+    color: #fff;
+}
 .servicos .card_servico .icone{  
     background: #F2F5F7;
     width: 80px;
