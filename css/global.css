@@ -123,8 +123,10 @@ section.white{
     justify-content: space-between;
     align-items: center;
 }
-.header a{
-    height: 50px;
+.header svg{
+    max-width: 178px;
+    max-height: 45px;
+    fill: #003A69;
 }
 .header_menu ul{
     display: flex;

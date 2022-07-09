@@ -1,26 +1,29 @@
-
-
 /* HeroArea */
 .heroarea{
     background: url("../img/home/heroarea.png") no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 .heroarea .container{
     display: flex;
     align-items: center;
+    justify-content: space-between;;
     max-width: 1200px;
     margin: 80px auto 0;
     height: 596px;
     padding: 60px 15px;
+    position: relative;
 }
 .heroarea .container .chamada{
     flex: 0 1 60%;
-    margin-right: 40px;
 }
 .heroarea h1 span{
     color:#FDBF0D;
 }
-.heroarea .lista_servicos li .btn{
+.heroarea .lista_servicos .servico_link{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
     color:#fff;
 }
 .heroarea .lista_servicos .icon_servico{
@@ -35,29 +38,58 @@
     fill: #fff;
     margin-left: 10px;
 }
-.heroarea  .lista_servicos {
+.heroarea  .lista_servicos{
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;    
     gap: 32px;
     max-width: 500px;
 }
-
-.heroarea  .lista_servicos li{
+.heroarea  .lista_servicos .servico_link{
     width: 227px;
+    text-align: start;
 }
-.heroarea  .lista_servicos li::after{
+.heroarea  .lista_servicos .servico_link::after{
     content: "";
-    width: 56px;
     height: 2px ;
+    width: 56px;
     display: block;
     margin: 10px 0;
     background: #FDBF0D;
+    transition: width .3s ease-in-out;
 }
-.heroarea .card .detalhes{
+.heroarea .lista_servicos .servico_link:hover::after{
+    width: 120px;
+}
+.heroarea .lista_servicos .servico_link:hover{
+    color: #FDBF0D;
+}
+.heroarea .lista_servicos svg.active{
+    fill: #FDBF0D; 
+}
+.heroarea .entre_contato{
+    display: flex;
+    margin-top: 32px;
+}
+.heroarea .detalhes_servico .ellipse{
+    position: absolute;
+    opacity: 40%;
+    width: 585px;
+    top: 0px;
+}
+.heroarea .plataformas img{
+    max-height: 48px;
+}
+.heroarea .detalhes_servico{
     display: flex;
     flex-direction: column;
-    min-width: 405px;
+    align-items: center;
+    margin-right: 15px;
+}
+.heroarea .card .detalhes{
+    display: flex; 
+    flex-direction: column;
+    width: 405px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.11);
     padding-top: 30px;
@@ -91,9 +123,9 @@
     height: 58px;
     background: #FDBF0D;
 }
-.heroarea .card .button {
+.heroarea .card .button{
     position: absolute;
-    top: 484px;
+    top: 402px;
     width: 405px;
     
     display: flex;
@@ -109,8 +141,6 @@
     position: absolute;
     margin: -120px -90px;
 }
-
-/* slide card */
 .slide_itens > *, .tag_servico{
     position: absolute;
     top: 0px;
@@ -123,36 +153,61 @@
     pointer-events: initial;
 }
 
-/* Servicos */
-.servicos .container{
+/* SERVICOS */
+.servicos{
+    position: relative;
+}
+.servicos .container_cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
 }
+.servicos .plataformas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 438px;
+    height: 88px;
+    background: #FBFEFF;
+    border: 1px solid #FFC100;
+    box-shadow: 0px 20px 20px rgba(40, 49, 56, 0.04);
+    border-radius: 3px;
+
+    position: absolute;
+    top: -44px;
+    right: 15px;
+}
 .servicos h2 {
     text-align: center;
-    margin-bottom: 32px;
+    margin: 40px 0 32px;
     color: #003A69;
 }
-.servicos .card_servico, .servicos .card_text{
-    max-width: 380px;
-    min-width: 360px;
-    height: 400px;
-
+.servicos .card_text{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 32px;
+}
+.servicos .card_text h4{
+    margin-bottom: 16px;
+}
+.servicos .card_servico{
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 16px;
-}
-.servicos .card_text{
-    justify-content: center;
+
+    max-width: 380px;
+    min-width: 360px;
+    height: 400px;
 }
 .servicos .card_servico{
     padding: 30px;
     border: 1px solid  #D7D7D7 ;
     border-radius: 10px;
     align-items: flex-start;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.1);
 }
 .servicos .card_servico:hover{
     background: #003A69;
@@ -197,6 +252,8 @@
     gap: 16px;
 }
 
+
+
 /* Sobre Nos */
 .sobre_nos .texto_gif{
     display: flex;
@@ -209,7 +266,7 @@
     color: #003A69;
 }
 .sobre_nos .textos{
-    max-width: 481px;
+    flex: 0 1 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -218,6 +275,12 @@
 }
 .sobre_nos .textos a{
     margin-top: 16px;
+}
+.sobre_nos .container_gif{
+    flex: 0 1 50%;
+}
+.sobre_nos .container_gif img{
+    width: 100%;
 }
 .sobre_nos .clientes{
     display: flex;
@@ -240,3 +303,64 @@
     gap: 60px;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 1000px){
+    .heroarea .container{
+        padding-bottom: 90px;
+        height: auto;
+    }
+    .heroarea .container .chamada{
+        flex: 0 1 100%;
+    }
+    .heroarea  .lista_servicos{
+        max-width: 100%;
+    }
+    .heroarea .detalhes_servico{
+        display: none;
+    }
+    .servicos .plataformas{
+        width: 70%;
+        
+        position: absolute;
+        top: -44px;
+        right: 0px;
+        left: 0px;
+        margin: 0 auto;
+    }
+    .servicos .container_cards{
+        padding-bottom: 32px;
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .solicite_orcamento {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobre_nos .texto_gif{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .sobre_nos .textos{
+        flex: auto;
+        max-width: 80%;
+    }
+    .sobre_nos .container_gif{
+        flex: auto;
+        width: 100%;
+        text-align: center;
+        margin: 32px 0 0 0;
+    }
+    .sobre_nos .container_gif img{
+        width: 80%;
+    }
+    
+}
+
+/* Navigate to: "iPad mini 8.3 - 4";
+Animate: Dissolve;
+animation-timing-function: linear;
+animation-duration: 300ms; */
