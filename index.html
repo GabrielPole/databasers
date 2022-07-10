@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
 
+
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/reset.css">
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/normalize.css">
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/global.css">
@@ -23,11 +24,14 @@
 </head>
 <body>
      <!-- NavBar -->
-     <!-- <header class="header">
+     <header class="header">
         <div class="container">
             <a href="index.html"><svg class="logotipo" alt="logotipo Databasers" ><use href="img/icon-library.svg#logotipo"></use></svg></a>
-            <nav class="header_menu">
-                <ul>
+            <nav id="nav" class="header_menu">
+                <button id="btn_mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
                     <li class="active"><a class="btn" href="index.html">Home</a></li>
                     <li><a class="btn" href="servicos.html">Serviços</a></li>
                     <li><a class="btn" href="sobre.html">Sobre</a></li>
@@ -36,7 +40,7 @@
                 </ul>
             </nav>
         </div>
-     </header> -->
+     </header>
 
      <!-- HEROAREA -->     
      <section class="heroarea">
@@ -148,9 +152,15 @@
      <!-- SERVICOS -->
      <section class="white servicos">
         <div class="plataformas">
-            <img src="img/home/mysql.png" alt="logotipo mysql">
-            <img src="img/home/sql_serve.png" alt="logotipo sql server">
-            <img src="img/home/oracle.png" alt="logotipo oracle">
+            <div class="tipo">
+                <img src="img/home/mysql.png" alt="logotipo mysql">
+            </div>
+            <div class="tipo">
+                <img src="img/home/sql_serve.png" alt="logotipo sql server">
+            </div>
+            <div class="tipo">
+                <img src="img/home/oracle.png" alt="logotipo oracle">
+            </div>
         </div>
          <h2 class="ornamento_left ornamento_right">Serviços</h2>
          <div class="card_text">
@@ -384,6 +394,8 @@
     </Section>
 
 
+    <script src="js/global.js"></script>
+    <script src="https://gabrielpole.github.io/databasers/js/global.js"></script>
 
       <!-- carrossel heroarea -->
     <script>
@@ -440,7 +452,7 @@
 
        
     </script>
-   
+
     <!-- Contato -->
      <script>
         document.getElementById('form_contato').addEventListener('submit', evitarEnvio);

@@ -112,6 +112,7 @@ section.white{
     top: 0;
     z-index: 1000;
     width: 100%;
+    height: 80px;
     background: #fff;
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.06);
 }
@@ -153,6 +154,10 @@ section.white{
     width: 90%;
     background: #FDBF0D;
     margin: 0 auto;
+}
+
+#btn_mobile{
+    display: none;
 }
 
 
@@ -335,7 +340,65 @@ section.white{
     width: 1220px;
 }
 
-@media only screen and (max-width: 888px){
+@media (max-width: 888px){
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        right: 0px;
+        background: #fff;
+        z-index: 2000;
+        transition: .6s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 80px);
+        visibility: visible;
+        overflow: auto;
+    } 
+    #menu a {
+        display: block;
+        text-align: start;
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+    #btn_mobile{
+        display: flex;
+        padding: .5rem .1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+    #hamburger{
+        color: #003A69;
+        border-top: 3px solid;
+        width: 30px;
+    }
+    #hamburger::after,  #hamburger::before{
+        content:'';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburger{
+        border-top: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -11px;
+    }
+    
     .contato .container{
         display: flex;
         flex-direction: column;
