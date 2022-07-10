@@ -116,7 +116,7 @@ section.white{
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.06);
 }
 .header .container{
-    max-width:1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
     display: flex;
@@ -156,45 +156,35 @@ section.white{
 }
 
 
-/* Contato */
-
+/* CONTATO */
 .contato{
-    width: 100%;
     padding: 60px;
     background: #2B3B4B;
     color: #fff;
 }
 .contato .container{
-    max-width: 990px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-
 }
-.contato .dados_contatos{
+.contato .container .dados_input{
+    grid-column: 2;
+    grid-row: 1 / 3;
+    max-width: 400px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    gap:16px
 }
+.contato .informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+} 
 .contato .container .informacoes h4{
-    margin-bottom: 16px;
-}
-.contato .container .informacoes .social{
-    margin-right: 16px;
-}
-.contato .dados_contatos h2{
-    color: #fff;
-    max-width: 430px;
-}
-.contato .dados_contatos h3{
-    margin: 16px 0 120px;
-}
-.contato .dados_contatos h4{
     display: flex;
     align-items: center;
-    flex-direction: row;
     gap: 16px;
 }
 .contato .informacoes svg{
@@ -202,17 +192,12 @@ section.white{
     width: 24px;
     fill: #fff;
 }
-.contato form button{
-    border: none;
-} 
-
-.contato .container .dados_input{
-    display: flex;
-    flex-direction: column;
-    gap:16px
+.contato .container .informacoes .social{
+    margin-right: 16px;
 }
 .contato .dados_input input, .contato .dados_input textarea{
     background: #F2F5F7;
+    border: none;
     border-bottom: 2px solid #FDBF0D;
     border-radius: 4px 4px 0px 0px;
     font-weight: 600;
@@ -221,7 +206,7 @@ section.white{
     color: #003A69;
 }
 .contato .dados_input input{
-    width: 386px;
+    width: 100%;
     height: 56px;
     padding: 0  0 0 45px;
 }
@@ -233,7 +218,8 @@ section.white{
     max-width: 50px;
 }
 .contato .dados_input textarea{
-    padding: 20px ;
+    padding: 20px;
+    width: 100%;
 }
 .contato .dados_input input::placeholder, .contato .dados_input textarea::placeholder{
     font-weight: 600;
@@ -243,6 +229,9 @@ section.white{
 }
 .contato .dados_input input:focus, .contato .dados_input textarea:focus{
     background: #FDEBBA;
+}
+.contato .dados_input button{
+    border: none;
 }
 
 /* Blog */
@@ -345,3 +334,36 @@ section.white{
 .footer .copyright{
     width: 1220px;
 }
+
+@media only screen and (max-width: 888px){
+    .contato .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        text-align: center;
+    }
+    .contato .container .title {
+        order: 1;
+    }
+    .contato .title H2{
+        margin-bottom: 32px;
+    }
+    .contato H2::before{
+        content:"";
+        display: inline-block;
+        height: 2px;
+        width: 60px;
+        background: #FDBF0D;
+        margin: 0 20px 5px;
+    }    
+    .contato .container .dados_input{
+        margin-left: 0px;
+        order: 2;
+    }
+    .contato .container .informacoes{
+        align-items: center;
+        order: 3;
+    }
+}
+
