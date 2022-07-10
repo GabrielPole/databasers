@@ -238,6 +238,64 @@ section.white{
 .contato .dados_input button{
     border: none;
 }
+.contato_agradecimento{
+    background: #2B3B4B;
+    color: #fff;
+}
+.contato_agradecimento .agradecimento{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+.contato_agradecimento .direcionamento{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 16px;
+    max-width: 600px;
+}
+.contato_agradecimento .agradecimento .mensagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    gap: 16px;
+    background: url('../img/contato_agradecimento.png') no-repeat;
+    box-shadow: inset 10px 4px 124px rgba(0, 0, 0, 0.85)
+}
+.contato_agradecimento .agradecimento .direcionamento h3{
+    padding-bottom: 16px; 
+}
+.contato_agradecimento .agradecimento .direcionamento .servico_link{
+    font-size: 18px;
+    font-weight: 600;
+    color:#fff;
+}
+.contato_agradecimento .agradecimento .direcionamento .servico_link{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    max-width: 386px;
+    height: 51px;
+    padding: 8px 32px;
+    background: #F2F5F7;
+    color: #003A69;
+    border-radius: 10px;
+}
+.contato_agradecimento .agradecimento .direcionamento .servico_link:hover{
+    background: #FDBF0D;
+}
+.contato_agradecimento .agradecimento .direcionamento .servico_link svg{
+    fill: #003A69;
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 10px;
+}
 
 /* Blog */
 
@@ -398,7 +456,6 @@ section.white{
         transform: rotate(-135deg);
         top: -11px;
     }
-    
     .contato .container{
         display: flex;
         flex-direction: column;
@@ -428,5 +485,26 @@ section.white{
         align-items: center;
         order: 3;
     }
+    .contato_agradecimento .agradecimento .mensagem{
+        margin-top: 60px;
+        padding: 60px;
+    }
+    .contato_agradecimento .agradecimento{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .contato_agradecimento .direcionamento{
+        justify-content: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .contato_agradecimento .agradecimento .direcionamento h3{
+        text-align: center;
+    }
+    .contato_agradecimento .agradecimento .direcionamento .servico_link{
+        max-width: 100%;
+        justify-content: center;
+    }
+    
 }
 
