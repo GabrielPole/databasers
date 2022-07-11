@@ -1,11 +1,11 @@
 // menu hamburgue
-var btnMObile = document.getElementById('btn_mobile');
+const btnMObile = document.getElementById('btn_mobile');
 
 function toggleMenu(event){
     if(event.type == 'touchstart') event.preventDefault();
-    let nav = document.getElementById('nav');
+    const nav = document.getElementById('nav');
     nav.classList.toggle('active');
-    let active = nav.classList.contains('active');
+    const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', active);
     if (active) {
         event.currentTarget.setAttribute('aria-label', 'Fehcar menu');
