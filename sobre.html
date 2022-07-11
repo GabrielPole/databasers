@@ -25,18 +25,41 @@
     <!-- NavBar -->
     <header class="header">
         <div class="container">
-            <a href="index.html"><img src="img/databasers.svg" alt="Databasers"></a>
-            <nav class="header_menu">
-                <ul>
-                    <li><a class="btn" href="index.html">Home</a></li>
-                    <li><a class="btn" href="servicos.html">Serviços</a></li>
-                    <li class="active"><a class="btn" href="sobre.html">Sobre</a></li>
-                    <li><a class="btn" href="blog.html">Blog</a></li>
-                    <li><a class="btn" href="contato.html">Contato</a></li>
+            <a href="index.html"><svg class="logotipo" alt="logotipo Databasers" ><use href="img/icon-library.svg#logotipo"></use></svg></a>
+            <nav id="nav" class="header_menu">
+                <button id="btn_mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" class="list_menu" role="menu">
+                    <li class="item"><a class="btn link_menu" href="index.html">Home</a></li>
+                    <li id="dropdown_navbar"  class="item">
+                        <span class="btn dropdown_button" href="servicos.html">Serviços<svg class="arrow_menu" alt="ícone de seta" ><use href="img/icon-library.svg#icon_arrow_bottom"></use></svg></span>
+                        <ul class="dropdown_list">
+                            <li>
+                                <a class="btn" href="sobre.html">Segurança</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Plataforma</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Terceirização</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Performance</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Desenvolvimento</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active item"><a class="btn link_menu" href="sobre.html">Sobre</a></li>
+                    <li class="item"><a class="btn link_menu" href="blog.html">Blog</a></li>
+                    <li class="item"><a class="btn link_menu" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
-        </header>
+     </header>
+
 
     <!-- Hero Area -->
     <section class="heroarea">

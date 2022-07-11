@@ -12,31 +12,54 @@
     
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/servico.css">
-
+    <link rel="stylesheet" href="/css/global.css">
+<!-- 
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/reset.css">
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/normalize.css">
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/global.css">
-    <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/servico.css"> 
+    <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/servico.css">  -->
     
 </head>
 <body>
     <!-- NavBar -->
-    <header class="header ">
+    <header class="header">
         <div class="container">
-            <a href="index.html"><img src="img/databasers.svg" alt="Databasers"></a>
-            <nav class="header_menu">
-                <ul>
-                    <li><a class="btn" href="index.html">Home</a></li>
-                    <li class="active"><a class="btn" href="servicos.html">Serviços</a></li>
-                    <li><a class="btn" href="sobre.html">Sobre</a></li>
-                    <li><a class="btn" href="blog.html">Blog</a></li>
-                    <li><a class="btn" href="contato.html">Contato</a></li>
+            <a href="index.html"><svg class="logotipo" alt="logotipo Databasers" ><use href="img/icon-library.svg#logotipo"></use></svg></a>
+            <nav id="nav" class="header_menu">
+                <button id="btn_mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" class="list_menu" role="menu">
+                    <li class="item"><a class="btn  link_menu" href="index.html">Home</a></li>
+                    <li id="dropdown_navbar"  class="active item">
+                        <span class="btn dropdown_button" href="servicos.html">Serviços<svg class="arrow_menu" alt="ícone de seta" ><use href="img/icon-library.svg#icon_arrow_bottom"></use></svg></span>
+                        <ul class="dropdown_list">
+                            <li>
+                                <a class="btn" href="sobre.html">Segurança</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Plataforma</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Terceirização</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Performance</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Desenvolvimento</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item"><a class="btn link_menu" href="sobre.html">Sobre</a></li>
+                    <li class="item"><a class="btn link_menu" href="blog.html">Blog</a></li>
+                    <li class="item"><a class="btn link_menu" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+     </header>
+
     <!-- HeroArea -->
     <section class="heroarea">
         <div class="container">
@@ -136,18 +159,17 @@
             </div>
         </div>
     </section>
-
-    <!-- Contato -->
-    <section class="contato">
+     <!--CONTATO -->
+     <section id="entre_contato" class="contato">
         <div class="container">
-            <div class="dados_contatos">
-                <div>
-                    <h2 class="ornamento_right">Contato</h2>
-                    <h3>Contate-nos para um orçamento ou mande sua dúvida</h3>
-                </div>
-                <div class="informacoes">
-                    <h4><svg alt="Ícone de e-mail"><use href="img/icon-library.svg#icon_email"></use></svg>contato@databasers.com.br</h4>
-                    <h4><svg alt="Ícone de telefone"><use href="img/icon-library.svg#icon_telefone"></use></svg>(11) 2391-6626</h4>
+            <div class="title">
+                <h2 class="ornamento_right">Contato</h2>
+                <h3>Contate-nos para um orçamento ou mande sua dúvida</h3>
+            </div>
+            <div class="informacoes">
+                <h4><svg alt="Ícone de e-mail"><use href="img/icon-library.svg#icon_email"></use></svg>contato@databasers.com.br</h4>
+                <h4><svg alt="Ícone de telefone"><use href="img/icon-library.svg#icon_telefone"></use></svg>(11) 2391-6626</h4>
+                <div class="social">
                     <a href="">
                         <svg class="social"  alt="ícone do instagran"> 
                             <use href="img/icon-library.svg#icon_instagram"></use>
@@ -161,29 +183,44 @@
                 </div>
             </div>
             <form class="dados_input" id="form_contato">
-                <div>
+                <div class="input_icon">
                     <svg alt="ícone do pessoa"><use href="img/icon-library.svg#icon_pessoa"></use></svg>
                     <input class="input-field load_disabled" name="name" type="text" placeholder="Nome" required>
                 </div>
-                <div>
+                <div class="input_icon">
                     <svg alt="Ícone de e-mail"><use href="img/icon-library.svg#icon_email"></use></svg>
                     <input class="input-field load_disabled" name="email" type="email" placeholder="E-mail" required>
                 </div>
-                <div>
+                <div class="input_icon">
                     <svg alt="Ícone de empresa"><use href="img/icon-library.svg#icon_empresa"></use></svg>
                     <input class="input-field load_disabled" type="text" placeholder="Empresa" required>
                 </div>
-                <div>
+                <div class="input_icon">
                     <textarea class="load_disabled" name="Mensagem" id="" cols="45" rows="10" style="resize:none" placeholder="Mensagem"></textarea>
                 </div>
                 <button id="button_sumit" class="btn btn_container" type="submit" type="text" value="enviar">Enviar</button>
             </form>
         </div>
     </section>
-    
-    <!-- Blog -->
+    <section id="depois_de_enviar" class="contato_agradecimento">
+        <div class="agradecimento">
+            <div class="mensagem">
+                <h3>Agradecemos seu contato</h3>
+                <p>Recebemos sua solicitação, e logo entraremos em contato.</p>
+            </div>
+            <div class="direcionamento">
+                <h3>Aproveite para saber mais de nossos serviços</h3>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do seguranca"><use href="img/icon-library.svg#icon_seguranca"></use></svg>Segurança</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do plataforma"><use href="img/icon-library.svg#icon_plataforma"></use></svg>Plataforma</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do tercerização"><use href="img/icon-library.svg#icon_tercerizacao"></use></svg>Terceirização</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do performance"><use href="img/icon-library.svg#icon_performance"></use></svg>Performance</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do desenvolvimento"><use href="img/icon-library.svg#icon_desenvolvimento"></use></svg>Desenvolvimento</use></svg></a>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG -->
     <section class="white blog_chamada">
-        <h2 class="ornamento_right">Blog</h2>
+        <h2 class="ornamento_right">Postagem do Blog</h2>
         <h3>Fique por dentro dos projetos e destaques do mundo da tecnologia</h3>
         <div class="artigos">
             <div class="card">
@@ -193,7 +230,7 @@
                 <div class="descricao">
                     <p>Uma hora ou outra a queixa chega: o acesso ao banco de dados para inserir ou consultar.</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="">Saiba Mais</a>
             </div>
             <div class="card">
                 <img src="img/Blog/blog2.jpg" alt="Imagem realacionda a segurança de banco de dados">
@@ -202,7 +239,7 @@
                 <div class="descricao">
                     <p>Manter a segurança dos dados de suas empresas é preocupação número um dos gestores. Os ambientes estão cada vez mais expostos a riscos, em especial no ambiente da web</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="">Saiba Mais</a>
             </div>
             <div class="card">
                 <img src="img/Blog/blog3.jpg" alt="Imagem realacionda a segurança de banco de dados">
@@ -211,12 +248,11 @@
                 <div class="descricao">
                     <p>Você acha que manter uma equipe de TI é caro? Se sua empresa mantém uma, por muitas vezes é possível que se depare com uma sobrecarga de atividades...</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="http://127.0.0.1:5500/leituraPostagem.html">Saiba Mais</a>
             </div>
         </div>
     </section>`
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <Section class="footer">
         <div class="container">
             <div class="footer_contato">
@@ -269,5 +305,8 @@
             </span>
         </div>
     </Section>
+    <script src="js/global.js"></script>
+    <!-- <script src="https://gabrielpole.github.io/databasers/js/global.js"></script> -->
+
 </body>
 </html>

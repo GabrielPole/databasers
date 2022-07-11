@@ -122,40 +122,75 @@ section.white{
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
-.header svg{
-    max-width: 178px;
-    max-height: 45px;
+.header .logotipo{
+    width: 178px;
+    height: 45px;
     fill: #003A69;
 }
-.header_menu ul{
+.header_menu .list_menu{
     display: flex;
-    position: relative;
+    align-items: center;
+    gap: 16px;
 }
-.header_menu a{
+.header_menu .item{
+    height: 50px;
+}
+.header_menu .link_menu{
     padding: 10px 16px;
+    display: flex;
+    align-items: center;
 }
-.header_menu ul{
-    margin-left: 8px;
+.header_menu .dropdown_button{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    cursor: pointer;
 }
-.header_menu li.active::after{
-    content:"";
+.header_menu .dropdown_button .arrow_menu{
+    height: 26px;
+    max-width: 26px;
+    margin-left: 10px;
+    fill: #003A69;
+}
+.header_menu .dropdown_list{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    position: absolute;
+    top: 70px;
+    
+    background: #fff;
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+}
+.header_menu .active_drop .dropdown_list{
+    display: flex;
+}
+.header_menu .dropdown_list li{
+    width: 100%;
+}
+.header_menu .dropdown_list a{
     display: block;
-    height: 2px;
-    width: 90% ;
-    background: #FDBF0D;
+    padding: 10px 16px;
+    text-align: start;
+    border-radius: 10px;
     margin: 0 auto;
 }
-.header_menu li:hover::after{
+.header_menu .dropdown_list a:hover{
+    background: #fad469;
+    border-radius: 0px;
+}
+.header_menu .item.active::after, .header_menu .item:hover::after{
     content:"";
     display: block;
-    height: 2px;
+    height: 3px;
     width: 90%;
     background: #FDBF0D;
     margin: 0 auto;
 }
-
 #btn_mobile{
     display: none;
 }
@@ -166,6 +201,9 @@ section.white{
     padding: 60px;
     background: #2B3B4B;
     color: #fff;
+}
+.contato.ocultar{
+    display: none;
 }
 .contato .container{
     display: grid;
@@ -232,15 +270,33 @@ section.white{
     line-height: 16px;
     color: #003A69;
 }
-.contato .dados_input input:focus, .contato .dados_input textarea:focus{
+.contato .dados_input input:focus, .contato .dados_input textarea:focus-visible{
     background: #FDEBBA;
 }
 .contato .dados_input button{
     border: none;
 }
+.contato .dados_input .gif_loading{
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+.contato .dados_input{
+    border: none;
+}
+.contato .dados_input .loading .gif_loading{
+    display: block;
+}
 .contato_agradecimento{
     background: #2B3B4B;
     color: #fff;
+}
+.contato_agradecimento{
+    display: none;
+}
+.contato_agradecimento.mostrar{
+    display: grid;
 }
 .contato_agradecimento .agradecimento{
     display: flex;
@@ -417,11 +473,9 @@ section.white{
         visibility: visible;
         overflow: auto;
     } 
-    #menu a {
+    #menu a{
         display: block;
         text-align: start;
-        padding: 1rem 0;
-        margin: 0 1rem;
     }
     #btn_mobile{
         display: flex;
@@ -456,6 +510,55 @@ section.white{
         transform: rotate(-135deg);
         top: -11px;
     }
+    .header_menu .link_menu:hover, .header_menu .item:hover{
+        background: #fad469;
+        color: #003A69;
+        border-radius: 0px;
+    }
+    .header_menu .item.active::after, .header_menu .item:hover::after{
+        position: absolute;
+        top: 0px;
+        height: 67px;
+        width: 6px ;
+        margin: 0 0;
+    }
+    .header_menu .link_menu{
+        padding: 16px;
+    }
+    .header_menu .item{
+        height: auto;
+    }
+    .header_menu .dropdown_button{
+        height: 67px;
+        padding: 0 16px;
+        cursor: pointer;
+    }
+    .header_menu .dropdown_button .arrow_menu{
+        height: 26px;
+        max-width: 26px;
+        margin-left: 10px;
+        fill: #003A69;
+    }
+    .header_menu .dropdown_list{
+        padding: none;
+        position: static;
+        background: #fff;
+        filter: none;
+        border-radius: 5px;
+    }
+    .header_menu .active_drop .dropdown_list{
+        display: flex;
+    }
+    .header_menu .dropdown_list a{
+        display: block;
+        padding: 10px 16px;
+        border-radius: none;
+    }
+    .header_menu .dropdown_list a:hover{
+        background: #fad469;
+        border-radius: 0px;
+    }
+
     .contato .container{
         display: flex;
         flex-direction: column;

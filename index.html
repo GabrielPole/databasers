@@ -31,12 +31,31 @@
                 <button id="btn_mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                     <span id="hamburger"></span>
                 </button>
-                <ul id="menu" role="menu">
-                    <li class="active"><a class="btn" href="index.html">Home</a></li>
-                    <li><a class="btn" href="servicos.html">Serviços</a></li>
-                    <li><a class="btn" href="sobre.html">Sobre</a></li>
-                    <li><a class="btn" href="blog.html">Blog</a></li>
-                    <li><a class="btn" href="contato.html">Contato</a></li>
+                <ul id="menu" class="list_menu" role="menu">
+                    <li class="active item"><a class="btn link_menu" href="index.html">Home</a></li>
+                    <li id="dropdown_navbar"  class="item">
+                        <span class="btn dropdown_button" href="servicos.html">Serviços<svg class="arrow_menu" alt="ícone de seta" ><use href="img/icon-library.svg#icon_arrow_bottom"></use></svg></span>
+                        <ul class="dropdown_list">
+                            <li>
+                                <a class="btn" href="sobre.html">Segurança</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Plataforma</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Terceirização</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Performance</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="sobre.html">Desenvolvimento</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item"><a class="btn link_menu" href="sobre.html">Sobre</a></li>
+                    <li class="item"><a class="btn link_menu" href="blog.html">Blog</a></li>
+                    <li class="item"><a class="btn link_menu" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -263,7 +282,7 @@
         </div>
      </Section>
      <!--CONTATO -->
-    <!-- <section class="contato">
+    <section id="entre_contato" class="contato">
         <div class="container">
             <div class="title">
                 <h2 class="ornamento_right">Contato</h2>
@@ -304,8 +323,8 @@
                 <button id="button_sumit" class="btn btn_container" type="submit" type="text" value="enviar">Enviar</button>
             </form>
         </div>
-    </section> -->
-    <section class="contato_agradecimento">
+    </section>
+    <section id="depois_de_enviar" class="contato_agradecimento">
         <div class="agradecimento">
             <div class="mensagem">
                 <h3>Agradecemos seu contato</h3>
@@ -333,7 +352,7 @@
                 <div class="descricao">
                     <p>Uma hora ou outra a queixa chega: o acesso ao banco de dados para inserir ou consultar.</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="">Saiba Mais</a>
             </div>
             <div class="card">
                 <img src="img/Blog/blog2.jpg" alt="Imagem realacionda a segurança de banco de dados">
@@ -342,7 +361,7 @@
                 <div class="descricao">
                     <p>Manter a segurança dos dados de suas empresas é preocupação número um dos gestores. Os ambientes estão cada vez mais expostos a riscos, em especial no ambiente da web</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="">Saiba Mais</a>
             </div>
             <div class="card">
                 <img src="img/Blog/blog3.jpg" alt="Imagem realacionda a segurança de banco de dados">
@@ -351,7 +370,7 @@
                 <div class="descricao">
                     <p>Você acha que manter uma equipe de TI é caro? Se sua empresa mantém uma, por muitas vezes é possível que se depare com uma sobrecarga de atividades...</p>
                 </div>
-                <a class="btn btn_outline" href="http://127.0.0.1:5500/leituraPostagem.html">Ler Mais</a>
+                <a class="btn btn_outline" href="http://127.0.0.1:5500/leituraPostagem.html">Saiba Mais</a>
             </div>
         </div>
     </section>`
@@ -411,7 +430,7 @@
 
 
     <script src="js/global.js"></script>
-    <script src="https://gabrielpole.github.io/databasers/js/global.js"></script>
+    <!-- <script src="https://gabrielpole.github.io/databasers/js/global.js"></script> -->
 
       <!-- carrossel heroarea -->
     <script>
@@ -468,25 +487,5 @@
 
        
     </script>
-
-    <!-- Contato -->
-     <script>
-        document.getElementById('form_contato').addEventListener('submit', evitarEnvio);
-        var input = document.querySelectorAll(".load_disabled");
-        var button = document.querySelector("#form_contato button");
-        console.log(button);
-        function evitarEnvio(event){
-            event.preventDefault();
-            input.forEach(disabledInput);
-            removeTextButton();
-        }
-        function disabledInput(input){
-            input.setAttribute("disabled", true);
-        }
-    </script>
-    <script>
-        document.getElementById('button_sumit').preventDefault();
-    </script>
-    
 </body>
 </html>
