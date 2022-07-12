@@ -29,12 +29,11 @@
 .heroarea .servicos{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-grow: 0;
     max-width: 100%;
     gap: 16px;
-    margin-bottom: 22px;
     padding-bottom: 20px;
+    margin: 0 auto;
     overflow-x: scroll;
 }
 .heroarea .servicos .tipo{
@@ -201,6 +200,11 @@
     border-radius: 163px;
 }
 @media (max-width: 888px){
+    .heroarea .servicos{
+        display: flex;
+        justify-content: center;
+        overflow-x: scroll;
+    }
     .tipo_servico .container .detalhes .card_processo {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -217,7 +221,9 @@
         border-radius: 16px;
     }  
     .tipo_servico .container .detalhes .card_processo {
-        
-        justify-content: start;
+        justify-content: center safe;
+    }
+    h2.ornamento_left::before,h2.ornamento_left::after {
+        display: none;
     }
 }
