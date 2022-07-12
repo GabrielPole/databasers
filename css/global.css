@@ -187,7 +187,7 @@ section.white{
     content:"";
     display: block;
     height: 3px;
-    width: 90%;
+    width: 100%;
     background: #FDBF0D;
     margin: 0 auto;
 }

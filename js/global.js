@@ -44,4 +44,27 @@ function evitarEnvio(event){
 function disabledInput(input){
     input.setAttribute("disabled", true);
 }
+// Page Servicos 
+var container_detalhes = document.getElementsByClassName("");
+
+window.onload = function() {
+    // vamos pegar todos os botoes:
+    var buttonArrow = document.querySelectorAll(".buttonArrow");
+    for(var i=0;i<buttonArrow.length;i++) {
+      var botao = buttonArrow[i];
+      botao.addEventListener("click", buttondrop);
+    }
+ };
+function buttondrop(event) {
+    event.currentTarget.classList.toggle('active');
+    event.currentTarget.parentNode.parentNode.classList.toggle('active');
+} 
+
+
+// buttonArrow.onclick = function() {
+//     buttonArrow.classList.toggle('active');
+//     container_detalhes.classList.toggle('active');
+// } 
+
+
     
