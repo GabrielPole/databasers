@@ -422,14 +422,22 @@ section.white{
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 16px;
     margin: 16px 0;
 }
 .footer .container .footer_contato .social{
     margin-right: 16px;
+    fill: #fff;
+    max-width: 32px;
+    max-height: 32px;
 }
 .footer .container .footer_links ul{
-    padding: 16px 0;
+    padding: 0;
+}
+.footer .container .footer_links li{
+    display: flex;
+}
+.footer .container .footer_links a{
+    padding: 8px 0;
 }
 .footer .container .footer_links ul a{
     color: #fff;
