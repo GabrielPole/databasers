@@ -13,14 +13,18 @@
 .heroarea .container h2{
     color: #fff;
 }
-
 /* Postagem */
 .conteudo_postagem .postagem{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    
     max-width: 895px;
+}
+.conteudo_postagem .img{
+    width: 100%;
+}
+.conteudo_postagem .img img{
+    width: 100%;
 }
 .conteudo_postagem .cabecalho .caption{
     margin: 8px 0 16px;

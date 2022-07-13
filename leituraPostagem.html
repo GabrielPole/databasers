@@ -64,7 +64,6 @@
             <h2 class="ornamento_left ornamento_right">Postagem</h2>
         </div>
     </section>
-
     <!-- conteudo -->
     <Section class="white conteudo_postagem">
         <div class="postagem">
@@ -73,7 +72,9 @@
                 <div class="caption">
                     <span >27 de outubro <span>|</span> 6 min de leitura</span>
                 </div>
-                <img src="img/blog/capa.png" alt="">
+                <div class="img">
+                    <img src="img/blog/capa.png" alt="Imagem da postagem">
+                </div>
             </div>
             <div class="texto">
                 <p>Se você ainda não sabe o que é a LGPD ou ouviu falar, mas ainda não se atentou ao que realmente essa legislação representa, é melhor buscar se informar. A Lei Geral de Proteção de Dados (LGPD), Lei Federal n. 13.709, foi sancionada em 14 de agosto de 2018 e entrará em vigor em agosto de 2020. Seu objetivo principal é garantir transparência no uso dos dados das pessoas físicas. É uma alteração do chamado Marco Civil da Internet, Lei n. 12,925, de 23 de abril de 2014, que até então regulava essas transações.</p>
@@ -86,19 +87,17 @@
             </div>           
         </div>
      </Section>
-
-
-    <!-- Contato -->
-    <section class="contato">
+    <!--CONTATO -->
+    <section id="entre_contato" class="contato">
         <div class="container">
-            <div class="dados_contatos">
-                <div>
-                    <h2 class="ornamento_right">Contato</h2>
-                    <h3>Contate-nos para um orçamento ou mande sua dúvida</h3>
-                </div>
-                <div class="informacoes">
-                    <h4><svg alt="Ícone de e-mail"><use href="img/icon-library.svg#icon_email"></use></svg>contato@databasers.com.br</h4>
-                    <h4><svg alt="Ícone de telefone"><use href="img/icon-library.svg#icon_telefone"></use></svg>(11) 2391-6626</h4>
+            <div class="title">
+                <h2 class="ornamento_right">Contato</h2>
+                <h3>Contate-nos para um orçamento ou mande sua dúvida</h3>
+            </div>
+            <div class="informacoes">
+                <h4><svg alt="Ícone de e-mail"><use href="img/icon-library.svg#icon_email"></use></svg>contato@databasers.com.br</h4>
+                <h4><svg alt="Ícone de telefone"><use href="img/icon-library.svg#icon_telefone"></use></svg>(11) 2391-6626</h4>
+                <div class="social">
                     <a href="">
                         <svg class="social"  alt="ícone do instagran"> 
                             <use href="img/icon-library.svg#icon_instagram"></use>
@@ -112,29 +111,44 @@
                 </div>
             </div>
             <form class="dados_input" id="form_contato">
-                <div>
+                <div class="input_icon">
                     <svg alt="ícone do pessoa"><use href="img/icon-library.svg#icon_pessoa"></use></svg>
                     <input class="input-field load_disabled" name="name" type="text" placeholder="Nome" required>
                 </div>
-                <div>
+                <div class="input_icon">
                     <svg alt="Ícone de e-mail"><use href="img/icon-library.svg#icon_email"></use></svg>
                     <input class="input-field load_disabled" name="email" type="email" placeholder="E-mail" required>
                 </div>
-                <div>
+                <div class="input_icon">
                     <svg alt="Ícone de empresa"><use href="img/icon-library.svg#icon_empresa"></use></svg>
                     <input class="input-field load_disabled" type="text" placeholder="Empresa" required>
                 </div>
-                <div>
+                <div class="input_icon">
                     <textarea class="load_disabled" name="Mensagem" id="" cols="45" rows="10" style="resize:none" placeholder="Mensagem"></textarea>
                 </div>
                 <button id="button_sumit" class="btn btn_container" type="submit" type="text" value="enviar">Enviar</button>
             </form>
         </div>
     </section>
-    
-    <!-- blog section -->
+    <section id="depois_de_enviar" class="contato_agradecimento">
+        <div class="agradecimento">
+            <div class="mensagem">
+                <h3>Agradecemos seu contato</h3>
+                <p>Recebemos sua solicitação, e logo entraremos em contato.</p>
+            </div>
+            <div class="direcionamento">
+                <h3>Aproveite para saber mais de nossos serviços</h3>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do seguranca"><use href="img/icon-library.svg#icon_seguranca"></use></svg>Segurança</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do plataforma"><use href="img/icon-library.svg#icon_plataforma"></use></svg>Plataforma</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do tercerização"><use href="img/icon-library.svg#icon_tercerizacao"></use></svg>Terceirização</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do performance"><use href="img/icon-library.svg#icon_performance"></use></svg>Performance</use></svg></a>
+                <a class="servico_link" href="#"><svg class="icon_servico" alt="ícone do desenvolvimento"><use href="img/icon-library.svg#icon_desenvolvimento"></use></svg>Desenvolvimento</use></svg></a>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG -->
     <section class="white blog_chamada">
-        <h2 class="ornamento_right">Blog</h2>
+        <h2 class="ornamento_right">Postagem do Blog</h2>
         <h3>Fique por dentro dos projetos e destaques do mundo da tecnologia</h3>
         <div class="artigos">
             <div class="card">
@@ -144,7 +158,7 @@
                 <div class="descricao">
                     <p>Uma hora ou outra a queixa chega: o acesso ao banco de dados para inserir ou consultar.</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="leituraPostagem.html">Saiba Mais</a>
             </div>
             <div class="card">
                 <img src="img/Blog/blog2.jpg" alt="Imagem realacionda a segurança de banco de dados">
@@ -153,7 +167,7 @@
                 <div class="descricao">
                     <p>Manter a segurança dos dados de suas empresas é preocupação número um dos gestores. Os ambientes estão cada vez mais expostos a riscos, em especial no ambiente da web</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="servicos/seguranca.html">Saiba Mais</a>
             </div>
             <div class="card">
                 <img src="img/Blog/blog3.jpg" alt="Imagem realacionda a segurança de banco de dados">
@@ -162,12 +176,11 @@
                 <div class="descricao">
                     <p>Você acha que manter uma equipe de TI é caro? Se sua empresa mantém uma, por muitas vezes é possível que se depare com uma sobrecarga de atividades...</p>
                 </div>
-                <a class="btn btn_outline" href="">Ler Mais</a>
+                <a class="btn btn_outline" href="servicos/seguranca.html">Saiba Mais</a>
             </div>
         </div>
     </section>`
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <Section class="footer">
         <div class="container">
             <div class="footer_contato">
@@ -184,19 +197,19 @@
                     <h4>Serviços</h4>
                     <ul>
                         <li>
-                            <a href="">Segurança</a>
+                            <a href="servicos/seguranca.html">Segurança</a>
                         </li>
                         <li>
-                            <a href="">Plataforma</a>
+                            <a href="servicos/plataforma.html">Plataforma</a>
                         </li>
                         <li>
-                            <a href="">Terceirização</a>
+                            <a href="servicos/tercerizacao.html">Terceirização</a>
                         </li>
                         <li>
-                            <a href="">Performance</a>
+                            <a href="servicos/performance.html">Performance</a>
                         </li>
                         <li>
-                            <a href="">Desenvolvimento</a>
+                            <a href="servicos/desenvovimento.html">Desenvolvimento</a>
                         </li>
                     </ul>
                 </div>
@@ -204,13 +217,13 @@
                     <h4>Páginas</h4>
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="">Sobre Nós</a>
+                            <a href="sobre.html">Sobre Nós</a>
                         </li>
                         <li>
-                            <a href="">Contato</a>
+                            <a href="contato.html">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -220,5 +233,7 @@
             </span>
         </div>
     </Section>
+    <script src="js/global.js"></script>
+    <script src="https://gabrielpole.github.io/databasers/js/global.js"></script>
 </body>
 </html>

@@ -160,6 +160,7 @@
 }
 .tipo_servico .container .detalhes li{
    width: 500px;
+   padding-right: 32px;
 }
 .tipo_servico .container .detalhes h4{
     text-align: center;

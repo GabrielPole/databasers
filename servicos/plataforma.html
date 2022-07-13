@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços - Segurança</title>
+    <title>Serviços - Plataforma</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/servico.css">
 
-    <!-- <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/reset.css">
+    <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/reset.css">
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/normalize.css">
     <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/global.css">
-    <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/servico.css">  -->
+    <link rel="stylesheet" href="https://gabrielpole.github.io/databasers/css/servico.css"> 
     
 </head>
 <body>
@@ -71,32 +71,33 @@
                     <svg alt="Ícone desenvolvimento"><use href="../img/icon-library.svg#icon_desenvolvimento"></use></svg>
                     <h2>Desenvolvimento</h2>
                 </a>
-                <a href="seguranca.html"  class="tipo active">
-                    <svg alt="Ícone de segurança"><use href="../img/icon-library.svg#icon_seguranca"></use></svg>
-                    <h2>Segurança</h2>
-                </a>
-                <a href="plataforma.html"  class="tipo">
+                <a href="plataforma.html"  class="tipo active">
                     <svg alt="Ícone de plataforma"><use href="../img/icon-library.svg#icon_plataforma"></use></svg>
                     <h2>Plataforma</h2>
                 </a>
+                <a href="seguranca.html"  class="tipo">
+                    <svg alt="Ícone de segurança"><use href="../img/icon-library.svg#icon_seguranca"></use></svg>
+                    <h2>Segurança</h2>
+                </a>
+              
                 <a href="tercerizacao.html"  class="tipo">
                     <svg alt="Ícone de Terceirização"><use href="../img/icon-library.svg#icon_tercerizacao"></use></svg>
                     <h2>Tercerização</h2>
                 </a>
             </div>
-            <h2 class="ornamento_left ornamento_right">Por que investir em segurança?</h2>
+            <h2 class="ornamento_left ornamento_right">Por que investir em plataforma?</h2>
             <div class="beneficios">
                 <div class="tag">
-                    <svg alt="Ícone de Terceirização"><use href="../img/icon-library.svg#icon_prevencao_ataques"></use></svg>
-                    <h2>Prevenção de Ataques</h2>
+                    <svg alt="Ícone de Terceirização"><use href="../img/icon-library.svg#icon_migracao"></use></svg>
+                    <h2>Migração</h2>
                 </div>
                 <div class="tag">
-                    <svg alt="Ícone de Terceirização"><use href="../img/icon-library.svg#icon_controle_acesso"></use></svg>
-                    <h2>Controle de Acessos</h2>
+                    <svg alt="Ícone de Terceirização"><use href="../img/icon-library.svg#icon_atualizacao_versao"></use></svg>
+                    <h2>Atualização de Versão</h2>
                 </div>
                 <div class="tag">
-                    <svg alt="Ícone de Terceirização"><use href="../img/icon-library.svg#icon_laudos_seguranca"></use></svg>
-                    <h2>Laudos de Segurança</h2>
+                    <svg alt="Ícone de Terceirização"><use href="../img/icon-library.svg#icon_Integracoes"></use></svg>
+                    <h2>Integração</h2>
                 </div>
             </div>
         </div>
@@ -104,78 +105,137 @@
     <!-- Tipos de servicos -->
     <section class="white tipo_servico">
         <h2 class="ornamento_right">Serviços</h2>
-        <!-- Security Assessment -->
+        <!-- Database Server Install-->
         <div  class="container">
             <div class="header_servico">
                 <div class="texto">
-                    <h4>Security Assessment</h4>
-                    <p>Relatório de avaliação de segurança do banco de dados.</p>
+                    <h4>Database Server Install</h4>
+                    <p>Configuração de um novo servidor de banco de dados.</p>
                 </div>
                 <button class="buttonArrow active"><svg alt="Ícone de performance"><use href="../img/icon-library.svg#icon_arrow_rigth"></use></svg></button>
             </div>
             <div class="detalhes">
                 <div class="conteudo">
-                    <p>Security Assessment é um serviço que visa avaliar as condições de segurança do ambiente de bancos de dados da sua empresa, levando em consideração as melhores práticas recomendadas pelos fabricantes e brechas de segurança já conhecidas pelos especialistas. A análise descreve, entre outros aspectos:</p>
+                    <p>Database Server Install é um serviço de preparação, instalação e configuração inicial de um novo servidor ou instância de banco de dados, resultando em um ambiente totalmente pronto para uso, com políticas, serviços, conexões e objetos disponíveis. Dessa forma, estão incluídos no serviço:</p>
                     <ul class="lista_motivos">
-                        <li>Defasagem na instalação de atualizações;</li>
-                        <li>Falta de uso de ferramentas e recursos nativos de segurança;</li>
-                        <li>Recursos de alto risco de segurança habilitados;</li>
-                        <li>Falhas na política e no uso de senhas;</li>
-                        <li>Indícios de falha na concessão de acessos;</li>
-                        <li>Adequação da política de backup e disponibilidade;</li>
-                        <li>Controle de acesso aos arquivos de dados;</li>
-                        <li>Riscos no nível de protocolos de comunicação e rede;</li>
-                        <li>Modelo de acesso a informações;</li>
-                        <li>Prevenção a SQL Injection;</li>
-                        <li>Uso de recursos de criptografia;</li>
+                        <li>Definição de escopo da instalação;</li>
+                        <li>Análise de políticas existentes;</li>
+                        <li>Avaliação de pré-requisitos;</li>
+                        <li>Instalação dos serviços;</li>
+                        <li>Criação de bancos de dados;</li>
+                        <li>Configuração de itens de segurança e performance;</li>
+                        <li>Testes de conexão, acesso e aplicação;</li>
                     </ul>
-                    <p>Todos esses itens serão avaliados de forma aprofundada por sistemas de checagem e analistas especializados em segurança de informação e banco de dados e apresentados em um relatório bem estruturado, que demonstra os pontos de conformidade e os riscos com excelente nível de detalhes, já acompanhados de recomendações de mudança, quando necessário.</p>
+                    <p>A instalação profissional fornece um ambiente realmente preparado para o uso, evitando a falta de recursos importantes e erros de configuração, entregando um relatório detalhado do processo e dos parâmetros estabelecidos.</p>
                     <h4>Processos</h4>
                     <div class="card_processo">
                         <div class="card">
                             <h3 class="number">1</h3>
-                            <p>O cliente receberá um script para que execute e envie, através de um dos meios disponíveis, os dados coletados.</p>
+                            <p>O cliente preencherá um formulário para que o escopo do serviço seja elaborado e uma estimativa prévia de prazo e custo seja definida.</p>
                         </div>
                         <div class="card">
                             <h3 class="number">2</h3>
-                            <p>Um documento será preparado e enviado ao cliente, que poderá avaliar e discutir os pontos levantados junto com nossa equipe.</p>
+                            <p>Serão alinhadas inicialmente as expectativas do cliente e a metodologia da condução dos trabalhos.</p>
                         </div>
                         <div class="card">
                             <h3 class="number">3</h3>
-                            <p>Através de análises realizadas com auxílio de ferramentas sofisticadas, serão identificadas as fragilidades e os riscos presentes no ambiente.</p>
+                            <p>Será realizada uma análise mais detalhada do ambiente e das necessidades para que as atividades e o esforço sejam melhor entendidos. Em caso de revisão dos custos para a execução do serviço, a proposta será submetida à aprovação do cliente.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="number">4</h3>
+                            <p>O desenvolvimento do trabalho consistirá em avaliação, implantação e parametrização dos serviços, criação e restauração de bancos de dados e configuração de itens de segurança e performance, dependendo do escopo desejado pelo cliente.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="number">5</h3>
+                            <p>Serão realizados testes de serviços, rotinas e aplicações no novo ambiente junto com a equipe técnica do cliente.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="number">6</h3>
+                            <p>O cliente receberá um relatório completo das atividades desenvolvidas e resultados obtidos.</p>
                         </div>
                     </div>
                 </div>
                 
             </div>
         </div>
-        <!-- Security Consulting -->
+        <!-- Plataform Migration -->
         <div class="container active">
             <div class="header_servico">
                 <div class="texto">
                     <h4>Security Consulting</h4>
-                    <p>Consultoria com escopo personalizado sobre segurança.</p>
+                    <p>Transferência de seus bancos de dados entre diferentes plataformas.</p>
                 </div>
                 <button class="buttonArrow active"><svg alt="Ícone de performance"><use href="../img/icon-library.svg#icon_arrow_rigth"></use></svg></button>
             </div>
             <div class="detalhes">
                 <div class="conteudo">
-                    <p>Security Consulting permite a alocação de horas de profissionais especialistas em segurança em uma abordagem personalizada para as necessidades de sua empresa, com o escopo que desejar. Os assuntos a serem trabalhados incluem, entre outros:</p>
+                    <p>Platform Migration consiste na transferência de dados e recursos entre plataformas distintas, sejam diferentes softwares, fabricantes, sistemas operacionais ou modelos de serviço, com a avaliação dos recursos em uso, prevenção a questões de compatibilidade e realização dos ajustes necessários. Portanto, o processo de migração envolve:</p>
                     <ul class="lista_motivos">
-                        <li>Política de segurança;</li>
-                        <li>Controle de acesso;</li>
-                        <li>Processo de atualização de servidor;</li>
-                        <li>Alta disponibilidade;</li>
-                        <li>Segurança integrada de rede e sistema de arquivos;</li>
-                        <li>Adequação a marcos regulatórios e legais;</li>
-                        <li>Requisitos de segurança relacionados ao negócio;</li>
-                        <li>Processo de log e auditoria;</li>
-                        <li>Criptografia;</li>
-                        <li>Segurança em integração de dados;</li>
-                        <li>Segurança em aplicações web e cliente-servidor;</li>
-                        <li>Segurança em relatórios e ferramentas de análise;</li>
+                        <li>Análise do ambiente atual e recursos utilizados;</li>
+                        <li>Mapeamento de compatibilidade;</li>
+                        <li>Correspondência de tipos de dados;</li>
+                        <li>Ajustes para os objetos e recursos incompatíveis;</li>
+                        <li>Preparação de roteiros e rotinas de migração;</li>
+                        <li>Preparação de rotinas de reversão em caso de falhas;</li>
+                        <li>Testes de recursos em ambiente de homologação;</li>
+                        <li>Agendamento da migração para ambiente final;</li>
+                        <li>Testes em ambiente de produção após migração;</li>
+                        <li>Acompanhamento do ambiente de produção;</li>
                     </ul>
-                    <p>Para cada um desses ou qualquer outro aspecto de segurança, nossos consultores poderão apoiar na avaliação, planejamento, revisão, apoio à decisão ou implementação, assumindo totalmente as atividades ou atuando em conjunto com sua equipe interna.</p>
+                    <p>Nosso time possui conhecimentos múltiplos sobre recursos e plataformas de bancos de dados e com auxílio de processos e tecnologias de ponta podem tornar muito mais simples a complexa atividade de mudança de plataforma, permitindo a empresa auferir os benefícios mais rapidamente e com menores riscos.</p>
+                    <h4>Processos</h4>
+                    <div class="card_processo">
+                        <div class="card">
+                            <h3 class="number">1</h3>
+                            <p>O cliente preencherá um formulário para que o escopo do serviço seja elaborado e uma estimativa prévia de prazo e custo seja definida.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="number">2</h3>
+                            <p>O cliente receberá um script para que execute e envie, através de um dos meios disponíveis, os dados coletados.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="number">3</h3>
+                            <p>Será realizada uma análise mais detalhada do ambiente e das necessidades para que as atividades e o esforço sejam melhor entendidos. Em caso de revisão dos custos para a execução do serviço, a proposta será submetida à aprovação do cliente.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="number">4</h3>
+                            <p>O desenvolvimento do trabalho consistirá em avaliação do ambiente atual, compatibilização de recursos de estrutura e código, parametrização dos serviços, tratamento de rotinas descontinuadas e novos recursos, migração dos dados, entre outras atividades, dependendo do escopo desejado pelo cliente.</p>
+                        </div>  
+                        <div class="card">
+                            <h3 class="number">5</h3>
+                            <p>Serão realizados testes de serviços, rotinas e aplicações no novo ambiente junto com a equipe técnica do cliente.</p>
+                        </div>    
+                        <div class="card">
+                            <h3 class="number">5</h3>
+                            <p>O cliente receberá um relatório completo das atividades desenvolvidas e resultados obtidos.</p>
+                        </div>        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Arquictecture Planning -->
+        <div class="container active">
+            <div class="header_servico">
+                <div class="texto">
+                    <h4>Arquictecture Planning</h4>
+                    <p>Planejamento técnico das plataformas, integrações e recursos ideais para a sua necessidade.</p>
+                </div>
+                <button class="buttonArrow active"><svg alt="Ícone de performance"><use href="../img/icon-library.svg#icon_arrow_rigth"></use></svg></button>
+            </div>
+            <div class="detalhes">
+                <div class="conteudo">
+                    <p>Architecture Planning é um sofisticado serviço de consultoria com objetivo de definir todos os componentes de seu ambiente de banco de dados e demais elementos de rede e sistemas relacionados, suas integrações e recursos vinculados. Através desse serviço são definidos, entre outros itens:</p>
+                    <ul class="lista_motivos">
+                        <li>Plataformas adequadas para cada necessidade;</li>
+                        <li>Modelo de segurança integrado;</li>
+                        <li>Conectividade entre servidores;</li>
+                        <li>Método de integração de dados;</li>
+                        <li>Modelo de conexão entre aplicação e banco de dados;</li>
+                        <li>Recursos de replicação e clusterização;</li>
+                        <li>Recursos redundantes que geram custo ou complexidade desnecessária.</li>
+                    </ul>
+                    <p>Com o planejamento correto e uma visão integrada, seu ambiente estará mais seguro, rápido e preparado para o crescimento.</p>
                     <h4>Processos</h4>
                     <div class="card_processo">
                         <div class="card">
@@ -198,62 +258,6 @@
                             <h3 class="number">5</h3>
                             <p>O cliente receberá um relatório completo das atividades desenvolvidas e resultados obtidos.</p>
                         </div>      
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="container active">
-            <div class="header_servico">
-                <div class="texto">
-                    <h4>Security Policy Design</h4>
-                    <p>Elabore ou revise a política de segurança dos bancos de dados da sua empresa.</p>
-                </div>
-                <button class="buttonArrow active"><svg alt="Ícone de performance"><use href="../img/icon-library.svg#icon_arrow_rigth"></use></svg></button>
-            </div>
-            <div class="detalhes">
-                <div class="conteudo">
-                    <p>Security Policy Design tem como objetivo apoiar a elaboração de uma robusta e completa política de segurança que estabeleça diretrizes e procedimentos para sua empresa, garantindo a adoção das melhores práticas de mercado e criando as condições para auditoria e atendimento a requisitos regulatórios, abordando tópicos como:</p>
-                    <ul class="lista_motivos">
-                        <li>Diretivas estabelecidas pela alta administração;</li>
-                        <li>Aspectos legais e regulatórios aplicáveis;</li>
-                        <li>Contextualização de ambiente de TI;</li>
-                        <li>Tópicos específicos das plataformas utilizadas;</li>
-                        <li>Mapeamento de risco;</li>
-                        <li>Métodos de autenticação;</li>
-                        <li>Restritivos em horário, local e ferramenta de acesso;</li>
-                        <li>Definição de trilhas de segurança;</li>
-                        <li>Procedimento de prevenção à invasão;</li>
-                        <li>Matriz de responsabilidades;</li>
-                        <li>Gerenciamento de senhas;</li>
-                        <li>Modelo de controle de acesso;</li>
-                        <li>Definição de papéis;</li>
-                        <li>Processo de concessão e revogação de acesso;</li>
-                        <li>Classificação de informações críticas e sensíveis;</li>
-                        <li>Segurança baseada em regras de negócio;</li>
-                        <li>Usuários de aplicação e integração;</li>
-                        <li>Estratégia de backup e recuperação de dados;</li>
-                        <li>Planos de continuidade e recuperação de desastres.</li>
-                    </ul>
-                    <p>Para cada um desses ou qualquer outro aspecto de segurança, nossos consultores poderão apoiar na avaliação, planejamento, revisão, apoio à decisão ou implementação, assumindo totalmente as atividades ou atuando em conjunto com sua equipe interna.</p>
-                    <h4>Processos</h4>
-                    <div class="card_processo">
-                        <div class="card">
-                            <h3 class="number">1</h3>
-                            <p>O cliente preencherá um formulário para que o escopo do serviço seja elaborado e uma estimativa prévia de prazo e custo seja definida.</p>
-                        </div>
-                        <div class="card">
-                            <h3 class="number">2</h3>
-                            <p>Serão alinhadas inicialmente as expectativas do cliente e a metodologia da condução dos trabalhos.</p>
-                        </div>
-                        <div class="card">
-                            <h3 class="number">3</h3>
-                            <p>Baseando-se nas necessidades específicas do cliente e características do ambiente encontrado, será enviada para o cliente uma proposta completa de política de segurança de banco de dados para que ele faça as revisões e ajustes que desejar.</p>
-                        </div>
-                        <div class="card">
-                            <h3 class="number">4</h3>
-                            <p>Um documento será preparado e enviado ao cliente, que poderá avaliar e discutir os pontos levantados junto com nossa equipe.</p>
-                        </div>    
                     </div>
                 </div>
                 
