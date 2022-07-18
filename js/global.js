@@ -23,8 +23,9 @@ dropdown_nav.onclick = function() {
     dropdown_nav.classList.toggle('active_drop');
 } 
 
-
 // Contato
+
+var pageServico = document.getElementById("entre_contato");
 document.getElementById('form_contato').addEventListener('submit', evitarEnvio);
 var input = document.querySelectorAll(".load_disabled");
 var button = document.querySelector("#form_contato button");
@@ -32,7 +33,11 @@ function evitarEnvio(event){
     event.preventDefault();
     input.forEach(disabledInput);
     button.classList.add("loading")
-    button.innerHTML = '<img class="gif_loading" src="img/lod_button.gif" alt="">';
+    if (pageServico) {
+        button.innerHTML = '<img class="gif_loading" src="../img/lod_button.gif" alt="">';
+    } else{
+        button.innerHTML = '<img class="gif_loading" src="img/lod_button.gif" alt="">';
+    }
 
     setTimeout(function(){
         var contato = document.querySelector("#entre_contato");
@@ -59,12 +64,3 @@ function buttondrop(event) {
     event.currentTarget.classList.toggle('active');
     event.currentTarget.parentNode.parentNode.classList.toggle('active');
 } 
-
-
-// buttonArrow.onclick = function() {
-//     buttonArrow.classList.toggle('active');
-//     container_detalhes.classList.toggle('active');
-// } 
-
-
-    

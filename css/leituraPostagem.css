@@ -1,6 +1,6 @@
 /* Hero Area */
 .heroarea{
-    background: url("../img/blog/postagem_do_blog.png") no-repeat;
+    background: url("/img/blog/postagem_do_blog.png") no-repeat;
     background-size: cover;
 }
 .heroarea .container{
